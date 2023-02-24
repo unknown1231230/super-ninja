@@ -1,126 +1,29 @@
-<!DOCTYPE html><html lang="en"><head><title>Cubes 2048.io Game Files - Crazy Games</title><link href="https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js" rel="preload" as="script" /><link href="https://www.crazygames.com/game/cubes-2048-io" rel="canonical" /><meta charset="UTF-8" /><meta name="description" content="The game files for Cubes 2048.io, a free browser game on CrazyGames.com" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Accept-CH" content="DPR" /><meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" /><style id="pacman-styles">/* background */
-body {
-  background-image: linear-gradient(290deg, #3b2b73 55%, #6f2f93, #6f2f93);
-  background-position: center;
-  text-align: center;
-} 
-/* for positioning of pacman loader */
-body, html { height: 100%; }
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
 
-@keyframes rotate_preloadpacman_half_up {
-  0% {
-    transform: rotate(270deg); }
-  50% {
-    transform: rotate(360deg); }
-  100% {
-    transform: rotate(270deg); }
-}
-
-@keyframes rotate_preloadpacman_half_down {
-  0% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
-}
-
-@keyframes preloadpacman-balls {
-  75% {
-    opacity: 0.7;
-  }
-  100% {
-    transform: translate(-100px, -6.25px);
-  }
-}
-
-.preloadpacman {
-  position: relative;
-}
-.preloadpacman > div:nth-child(2) {
-  animation: preloadpacman-balls 1s -0.99s infinite linear;
-}
-.preloadpacman > div:nth-child(3) {
-  animation: preloadpacman-balls 1s -0.66s infinite linear;
-}
-.preloadpacman > div:nth-child(4) {
-  animation: preloadpacman-balls 1s -0.33s infinite linear;
-}
-.preloadpacman > div:nth-child(5) {
-  animation: preloadpacman-balls 1s 0s infinite linear;
-}
-.preloadpacman > div:first-of-type {
-  width: 0px;
-  height: 0px;
-  border-right: 25px solid transparent;
-  border-top: 25px solid #fff;
-  border-left: 25px solid #fff;
-  border-bottom: 25px solid #fff;
-  border-radius: 25px;
-  animation: rotate_preloadpacman_half_up 0.5s 0s infinite;
-  position: relative;
-  left: -30px;
-}
-.preloadpacman > div:nth-child(2) {
-  width: 0px;
-  height: 0px;
-  border-right: 25px solid transparent;
-  border-top: 25px solid #fff;
-  border-left: 25px solid #fff;
-  border-bottom: 25px solid #fff;
-  border-radius: 25px;
-  animation: rotate_preloadpacman_half_down 0.5s 0s infinite;
-  margin-top: -50px;
-  position: relative;
-  left: -30px;
-}
-.preloadpacman > div:nth-child(3),
-.preloadpacman > div:nth-child(4),
-.preloadpacman > div:nth-child(5),
-.preloadpacman > div:nth-child(6) {
-  background-color: #fff;
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  margin: 2px;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  transform: translate(0, -6.25px);
-  top: 25px;
-  left: 70px;
-}
-</style></head><body><div class="preloadpacman" id="pacman"><div></div><div></div><div></div><div></div><div></div></div><script type="text/javascript">function loadScript(url, callback) {
-  var head = document.head;
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = url;
-  script.async = true;
-  script.onreadystatechange = callback;
-  script.onload = callback;
-  head.appendChild(script);
-}
-var options = {"loader":"iframe","loaderOptions":{"url":"https://files.crazygames.com/cubes-2048-io/7/index.html"},"thumbnail":"https://images.crazygames.com/cubes-2048-io/20230111111834/cubes-2048-io-cover?auto=format,compress&q=75&cs=strip&w=360","gameName":"Cubes 2048.io","gameHttps":true,"gameSlug":"cubes-2048-io","gameId":"21315","gameStatus":"published","showAdOnExternal":"ALWAYS","showAdOnInternal":"DEFAULT","disableEmbedding":false,"dollarRate":0.9429905625504499,"upvotes":98547,"downvotes":20542,"releaseDate":"2022-12-19","locale":"en_US","controls":{"text":"<h3>Controls</h3>\n<h4>PC</h4>\n<ul>\n    <li>Move mouse = change direction</li>\n    <li>Hold left-click = speed up</li>\n</ul>\n<h4>Mobile </h4>\n<ul>\n    <li>Drag = move</li>\n    <li>Double tap = speed up</li>\n</ul>"},"videoThumbnail":"https://videos.crazygames.com/cubes-2048-io/1/cubes-2048-io-thumbnail.mp4","video":{"original":"https://videos.crazygames.com/cubes-2048-io/1/cubes-2048-io.mp4","sizes":[{"width":205,"height":115,"location":"https://videos.crazygames.com/cubes-2048-io/1/cubes-2048-io-205x115.mp4"},{"width":249,"height":140,"location":"https://videos.crazygames.com/cubes-2048-io/1/cubes-2048-io-249x140.mp4"},{"width":364,"height":208,"location":"https://videos.crazygames.com/cubes-2048-io/1/cubes-2048-io-364x208.mp4"},{"width":494,"height":276,"location":"https://videos.crazygames.com/cubes-2048-io/1/cubes-2048-io-494x276.mp4"},{"width":611,"height":343,"location":"https://videos.crazygames.com/cubes-2048-io/1/cubes-2048-io-611x343.mp4"}]},"sandbox":true,"totalSize":"4 MB","minTimeBetweenMidrollAdsInMs":180000,"minTimeBetweenRewardedAdsInMs":5000,"noMidrollAdInFirstMinutes":3,"noRewardedAdInFirstMinutes":0,"categoryEnSlug":"io","tagsEnSlugs":["one-button","3d","top-down","arena","snake","survive","2048","mouse","collect","html5","merge"],"isKids":false,"hasMidroll":true,"hasRewarded":true,"fullscreen":"ADDS_VALUE","orientation":"BOTH","category":"Snake","categoryLink":"https://www.crazygames.com/t/snake","gameLink":"https://www.crazygames.com/game/cubes-2048-io","alternativeGames":[],"domainHasNoCMP":false};
-var SDK_READY = false;
-var GF_READY = false;
-var GF_LOAD_CALLED = false;
-loadScript("https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js", function() {
-    Crazygames.load(options).then(function() {
-      var pacmanWrapper = document.getElementById('pacman');
-      var pacmanStyles = document.getElementById('pacman-styles');
-
-      if (pacmanWrapper && pacmanStyles) {
-        pacmanWrapper.remove();
-        pacmanStyles.remove();
-      }
-    });
-});</script></body></html>
+<!DOCTYPE html><html><head>
+<meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data: https://accounts.google.com https://*.google-analytics.com https://*.googleapis.com/ https://127.0.0.1:* https://localhost:* https://remotejs.com/ wss://remotejs.com/ https://*.ingest.sentry.io https://securepubads.g.doubleclick.net https://c.amazon-adsystem.com https://aax-dtb-cf.amazon-adsystem.com https://prod.us-east-1.cxm-bcn.publisher-services.amazon.dev https://pagead2.googlesyndication.com http://c.amazon-adsystem.com https://dpm.demdex.net; ">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="manifest" href="manifest.json">
+<style></style>
+<title>farm-land-playcanvas</title>
+<script src="https://sdk.crazygames.com/crazygames-sdk-v1.js"></script>
+<script src="files/assets/65646209/1/preventLongPressIOS.js"></script>
+<script src="playcanvas-stable.min.js"></script>
+<script src="__settings__.js"></script>
+<link rel="canonical" href="https://www.crazygames.com/game/farm-land"></head>
+<body>
+<div id="deployVersion" style="
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 9999;
+            color: #e3e3e3;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 0.5em;
+            text-shadow: -1px 1px 2px #000;
+        ">1.7.1.1p</div>
+<script src="__start__.js"></script>
+<script src="__loading__.js"></script>
+</body></html>
